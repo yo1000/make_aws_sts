@@ -1,10 +1,3 @@
-def get_or_else(v, f):
-    if v:
-        return v
-    else:
-        return f()
-
-# main
 import os
 import configparser
 import boto3
@@ -17,10 +10,10 @@ parser.add_argument('-u', '--username', help='Username')
 parser.add_argument('-t', '--token', help='Token code')
 args = parser.parse_args()
 
-profile = get_or_else(args.profile, lambda: input('Profile name: '))
-account = get_or_else(args.account, lambda: input('Account id: '))
-username = get_or_else(args.username, lambda: input('Username: '))
-token_code = get_or_else(args.token, lambda: input('Token code: '))
+profile = args.profile or (lambda: input('Profile name: '))()
+account = args.account or (lambda: input('Account id: '))()
+username = args.username or (lambda: input('Username: '))()
+token_code = args.token or (lambda: input('Token code: '))()
 
 path_home = os.path.expanduser('~')
 path_credentials = '{home}/.aws/credentials'.format(home=path_home)
