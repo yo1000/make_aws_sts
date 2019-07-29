@@ -1,4 +1,4 @@
-# make_aws_sts
+# make_aws_session_token
 
 ## Requirements
 - Python 3.x
@@ -31,6 +31,6 @@ Default output format [None]:
 
 ### Run script
 ```
-$ python make_aws_sts.py --profile default --account 123456789012 --username iam-username
+$ python make_aws_session_token.py --profile default --account 123456789012 --username iam-username
 Token code: 123456
 ```
