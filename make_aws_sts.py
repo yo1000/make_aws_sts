@@ -1,8 +1,8 @@
 def get_or_else(v, f):
-	if v:
-		return v
-	else:
-		return f()
+    if v:
+        return v
+    else:
+        return f()
 
 # main
 import os
@@ -48,8 +48,8 @@ aws_secret_access_key = config[profile][AWS_SECRET_ACCESS_KEY]
 serial_number='arn:aws:iam::{account}:mfa/{username}'.format(account=account, username=username)
 
 client = boto3.client(
-	'sts',
-	aws_access_key_id=aws_access_key_id,
+    'sts',
+    aws_access_key_id=aws_access_key_id,
     aws_secret_access_key=aws_secret_access_key)
 
 response = client.get_session_token(
