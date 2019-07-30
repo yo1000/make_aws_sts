@@ -6,11 +6,11 @@
 - Boto3
 
 ## How to Use
-1. Install Python (https://www.python.org/downloads/)
+1. Install [Python](https://www.python.org/downloads/)
 2. Install AWS CLI
-    - Linux (https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-linux.html)
-    - Windows (https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-windows.html#awscli-install-windows-pip)
-    - macOS (https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-macos.html#awscli-install-osx-pip)
+    - Linux ([en](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html), [ja_JP](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-linux.html))
+    - Windows ([en](https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html#awscli-install-windows-pip), [ja_JP](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-windows.html#awscli-install-windows-pip))
+    - macOS ([en](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html#awscli-install-osx-pip), [ja_JP](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-macos.html#awscli-install-osx-pip))
 3. Install Boto3
 4. Configure AWS Credentials
 5. Run script
