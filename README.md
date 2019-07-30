@@ -30,7 +30,13 @@ Default output format [None]:
 ```
 
 ### Run script
+
+Examples:
 ```
-$ python make_aws_sts_credentials.py --profile default --account 123456789012 --username iam-username
+$ python make_aws_sts_credentials.py \
+  --profile default \
+  --account 123456789012 \
+  --username iam-username
 Token code: 123456
+STS Credential was saved as [default_sts] profile to /home/your-name/.aws/credentials
 ```
